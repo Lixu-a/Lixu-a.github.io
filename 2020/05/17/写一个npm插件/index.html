@@ -7,15 +7,19 @@
   
   <title>写一个npm插件 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="vue按需引入toast需要单独配置，vue-cli2和vue-cli3配置还不一样；所以写个基于vue工程使用的toast插件，类似mint-ui的Toast  安装1npm install my-showtoast --save 引入12import showToast from &#39;my-showtoast&#39;;Vue.use(showToast) 使用12this.$showT">
+<meta property="og:type" content="article">
 <meta property="og:title" content="写一个npm插件">
 <meta property="og:url" content="http://yoursite.com/2020/05/17/%E5%86%99%E4%B8%80%E4%B8%AAnpm%E6%8F%92%E4%BB%B6/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="vue按需引入toast需要单独配置，vue-cli2和vue-cli3配置还不一样；所以写个基于vue工程使用的toast插件，类似mint-ui的Toast  安装1npm install my-showtoast --save 引入12import showToast from &#39;my-showtoast&#39;;Vue.use(showToast) 使用12this.$showT">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13511312-3dda2ef6371a12f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2020-05-17T05:20:38.000Z">
-<meta property="article:modified_time" content="2020-05-17T05:20:38.346Z">
+<meta property="article:modified_time" content="2020-05-17T05:22:20.183Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/13511312-3dda2ef6371a12f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,11 +90,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p><code>vue</code>按需引入<code>toast</code>需要单独配置，<code>vue-cli2</code>和<code>vue-cli3</code>配置还不一样；<br>所以写个基于vue工程使用的<code>toast</code>插件，类似<code>mint-ui</code>的<code>Toast</code></p>
+<ul>
+<li>安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install my-showtoast --save</span><br></pre></td></tr></table></figure></li>
+<li>引入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import showToast from &#39;my-showtoast&#39;;</span><br><span class="line">Vue.use(showToast)</span><br></pre></td></tr></table></figure></li>
+<li>使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">this.$showToast.show(&#39;hello2020!&#39;)</span><br><span class="line">this.$showToast.hide()</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/13511312-3dda2ef6371a12f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="my-showtoast.png"></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/05/17/%E5%86%99%E4%B8%80%E4%B8%AAnpm%E6%8F%92%E4%BB%B6/" data-id="ckaam4cfj0000qouw0vb13vgi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/05/17/%E5%86%99%E4%B8%80%E4%B8%AAnpm%E6%8F%92%E4%BB%B6/" data-id="ckaam59wh0002j4uw5a6xfs49" class="article-share-link">Share</a>
       
       
     </footer>
